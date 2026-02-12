@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <h1 id="heading">Course Registration Form</h1>
+    <form action="./msg.html">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="firstname">First Name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="firstname" name="firstname" placeholder="Ex:Ramya" required/>
+                        <p class="tooltip">Enter your Name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="surname">Surname</label>
+                    </td>
+                    <td>
+                        <input type="text" id="surname" name="surname" placeholder="Ex:V" optional>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Mobile number</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="phone" name="phone" placeholder="EX:123-456-7890" required>
+                        <p class="tooltip">Enter your mobile number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="EX:example@gmail.com" required>
+                        <p class="tooltip">Enter your Email</p>
+                        <img class="correct" src="https://cdn-icons-png.flaticon.com/128/5290/5290058.png" alt="">
+                        <img class="incorrect" src="https://cdn-icons-png.flaticon.com/128/6711/6711656.png" alt="">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                       <label for="password">Password</label> 
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password" required>
+                        <p class="tooltip">Enter your Password</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cpassword">Confirm Password</label>
+                    
+                    </td>
+                    <td>
+                        <input type="password" id="cpassword" name="cpassword"required>
+                        <p class="tooltip">Enter the Confirm password</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dob">DOB</label>
+                    </td>
+                    <td>
+                        <input type="date" name="dob" id="dob" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Age">Age</label>
+                    </td>
+                    <td>
+                        <input type="number" name="Age" id="Age" min="18" max="50" required>
+                        <p class="tooltip">Enter your Age</p>
+                        <img class="correct" src="https://cdn-icons-png.flaticon.com/128/5290/5290058.png" alt="">
+                        <img class="incorrect" src="https://cdn-icons-png.flaticon.com/128/6711/6711656.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="gender" value="Male" required><label>Male</label>
+                        <input type="radio" name="gender" id="gender" value="Female"required><label>Female</label>
+                        <input type="radio" name="gender" id="gender" value="Others" required><label>Others</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="country">Select Country</label>
+                    </td>
+                    <td>
+                        <select name="country" id="country">
+                            <option id="option1" value="INDIA">INDIA</option>
+                            <option id="option2" value="USA">USA</option>
+                            <option id="option3" value="CANDA">CANDA</option>
+                            <option id="option4" value="GERMANY">GERMANY</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="upload">Upload Picture</label>
+                    </td>
+                    <td>
+                        <input type="file" name="upload" id="upload">
+                    </td>
+                </tr>
+                <td>
+                    <input type="reset">
+                </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Course Details</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="selectcourse">Select Course</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="selectcourse" id="selectcourse">
+                        <option id="option1" value="Python Full Stack">Python Full Stack</option>
+                        <option id="option2" value="Java Full Stack with AI">Java Full Stack with AI</option>
+                        <option id="option4" value="Full Stack Web Development">Full Stack Web Development</option></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <label for="mode">Delivery Mode</label>
+                        <input type="radio" name="mode" id="mode" value="Online"><label>Online</label>
+                        <input type="radio" name="mode" id="mode" value="Offline"><label>Offline</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Inname">Institute Name</label>
+                        <input type="text" name="Inname" id="Inname" value="TAP Academy" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="knowledge">Choose your present Coding knowledge level. </label></td>
+                </tr>
+                <tr>
+                    <td><input type="range" name="knowledge" id="knowledge" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="comments">Comments</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="comments" id="comments" rows="4" cols="30"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
